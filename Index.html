@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdduAInnova - E-Book "Agentes Inmobiliarios 2.0"</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+    
+        header {
+            background: url('https://static.wixstatic.com/media/334454_0d75b0838a224636a2f01a63a38fc4f3~mv2.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+    
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+    
+        header h2 {
+            font-size: 1.8em;
+            margin: 10px 0 0;
+        }
+    
+        .logo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            margin: 0 auto 40px;
+        }
+    
+        main {
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .description {
+            margin: 40px 20px;
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+    
+        .promo-section {
+            background-color: #f7e2ff;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: -4px auto 40px;
+            text-align: center;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .promo-section img {
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        .promo-section h3 {
+            font-size: 1.8em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        footer {
+            background-color: #1c345a;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+    
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+    
+        .social-icons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+    
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    
+        .facebook {
+            background: url('https://static.wixstatic.com/media/334454_dc15a010a61d46a981be57ca0dd17f17~mv2.png') no-repeat center;
+        }
+    
+        .instagram {
+            background: url('https://static.wixstatic.com/media/334454_d6a5f1ece173409b839a48772eff9e05~mv2.png') no-repeat center;
+        }
+    
+        .twitter {
+            background: url('https://static.wixstatic.com/media/334454_25a1f99ac2664b25915f83b9e053c3cf~mv2.webp') no-repeat center;
+        }
+    
+        .linkedin {
+            background: url('https://static.wixstatic.com/media/334454_93cbc26128374974ade79d9beeb8508b~mv2.png') no-repeat center;
+        }
+    
+        .whatsapp-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: url('https://static.wixstatic.com/media/334454_69236334e64946f999cb874f1b3eec87~mv2.png') no-repeat center center;
+            background-size: 80%;
+            box-shadow: 0 0 15px 5px #39ff14;
+            animation: pulse 1.5s infinite;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+    
+        .whatsapp-widget:hover {
+            transform: scale(1.2);
+        }
+    
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 15px 5px #39ff14;
+            }
+            50% {
+                box-shadow: 0 0 25px 10px #39ff14;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .promo-section {
+                margin: 20px 10px;
+                padding: 15px;
+            }
+    
+            .promo-section h3 {
+                font-size: 1.5em;
+            }
+    
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+            }
+    
+            .whatsapp-widget {
+                width: 60px;
+                height: 60px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+    
+            header h2 {
+                font-size: 1.2em;
+            }
+    
+            .promo-section {
+                padding: 10px;
+            }
+    
+            .promo-section h3 {
+                font-size: 1.3em;
+            }
+    
+            footer img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            .whatsapp-widget {
+                width: 50px;
+                height: 50px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>       
+</head>
+<body>
+
+<header>
+    <img src="https://static.wixstatic.com/media/334454_fa9bda169297455e8b85c87d89272ddc~mv2.png" alt="Logo EdduAInnova" class="logo">
+    <h1>EdduAInnova</h1>
+    <h2>E-Book: "Agentes Inmobiliarios 2.0"</h2>
+</header>
+
+<main>
+    <div class="description">
+        <p>Domina la Inteligencia Artificial y transforma tu negocio inmobiliario con nuestro E-Book exclusivo. Aprende a crear publicidad persuasiva, realizar evaluaciones precisas de propiedades, y mucho más.</p>
+    </div>
+
+    <div class="purchase-section">
+        <h3>Adquiere tu E-book aquí por solo $39.00 USD</h3>
+        <img src="https://media.giphy.com/media/rIxMJjRVCyTbxPu8An/giphy.gif?cid=ecf05e47gy7pa50bo7js03lfeyd51ivqj0wk3je9me97hfsk&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Comprar ahora">
+    </div>
+
+    <div class="promo-section">
+        <form>
+            <script src='https://checkout.epayco.co/checkout.js'
+                data-epayco-key='9a411b6075a8a6222aff5df6631175fa' 
+                class='epayco-button' 
+                data-epayco-amount='39' 
+                data-epayco-tax='0.00'  
+                data-epayco-tax-ico='0.00'               
+                data-epayco-tax-base='39'
+                data-epayco-name='E-BOOK - Agentes inmobiliarios 2.0' 
+                data-epayco-description='E-BOOK - Agentes inmobiliarios 2.0' 
+                data-epayco-currency='usd'    
+                data-epayco-country='CO' 
+                data-epayco-test='false' 
+                data-epayco-external='false' 
+                data-epayco-response=''  
+                data-epayco-confirmation='' 
+                data-epayco-button='https://static.wixstatic.com/media/334454_619a95c8968f4b6c95a01b1b73b0bb05~mv2.gif'> 
+            </script> 
+        </form>
+        <h3>¡Oferta Exclusiva!</h3>
+        <p>Aprovecha nuestra oferta especial con nuestro E-Book "Agentes Inmobiliarios 2.0" y lleva tu negocio inmobiliario al siguiente nivel.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/Edduainnova" class="facebook" target="_blank"></a>
+        <a href="https://www.instagram.com/edduainnova/" class="instagram" target="_blank"></a>
+        <a href="https://x.com/EdduAInnova" class="twitter" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/eduardo-a-rivera-269995314/" class="linkedin" target="_blank"></a>
+    </div>
+</footer>
+
+<div class="whatsapp-widget" onclick="window.location.href='https://api.whatsapp.com/send?phone=573185462265&text=%E2%9C%A8%20%C2%A1Hola!%20Bienvenido%20a%20*EdduAInnova*%20%F0%9F%8C%9F%2C%20donde%20transformamos%20tu%20negocio%20inmobiliario%20con%20la%20magia%20de%20la%20inteligencia%20artificial.%20%F0%9F%9A%80%20*%C2%BFEn%20qu%C3%A9%20puedo%20ayudarte%20hoy%3F*'"></div>
+
+</body>
+</html>
