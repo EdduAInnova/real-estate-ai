@@ -9,402 +9,450 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
-        :root {
-            --primary: #2E3192;
-            --secondary: #1BFFFF;
-            --accent: #e7208b;
-            --text-light: #ffffff;
-            --text-dark: #1a1a1a;
-            --bg-dark: #0a0a0a;
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --card-shadow: 0 8px 32px 0 rgba(49, 59, 204, 0.40);
-            --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
-            --gradient-accent: linear-gradient(45deg, var(--accent), var(--secondary));
-            --dark-card-bg: #270136;
-            --shadow:#6f0a2f;
-            --redes:#313bcc
-        }
+:root {
+    --primary: #2E3192;
+    --secondary: #1BFFFF;
+    --accent: #e7208b;
+    --text-light: #ffffff;
+    --text-dark: #1a1a1a;
+    --bg-dark: #0a0a0a;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 8px 32px 0 rgba(49, 59, 204, 0.40);
+    --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+    --gradient-accent: linear-gradient(45deg, var(--accent), var(--secondary));
+    --dark-card-bg: #270136;
+    --shadow:#6f0a2f;
+    --redes:#313bcc
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        body {
-            background: var(--bg-dark);
-            color: var(--text-light);
-            overflow-x: hidden;
-        }
+body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
 
-        .hero-section {
-            min-height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://static.wixstatic.com/media/334454_0d75b0838a224636a2f01a63a38fc4f3~mv2.jpg') no-repeat center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 2rem;
-        }
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://static.wixstatic.com/media/334454_0d75b0838a224636a2f01a63a38fc4f3~mv2.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
 
-        .hero-content {
-            max-width: 1200px;
-            text-align: center;
-            z-index: 2;
-        }
+.hero-content {
+    max-width: 1200px;
+    text-align: center;
+    z-index: 2;
+}
 
-        .logo-container {
-            position: relative;
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 2rem;
-        }
+.logo-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 2rem;
+}
 
-        .logo {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--secondary);
-            animation: logoGlow 2s infinite alternate;
-        }
+.logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary);
+    animation: logoGlow 2s infinite alternate;
+}
 
-        @keyframes logoGlow {
-            from {
-                box-shadow: 0 0 20px var(--secondary);
-            }
-            to {
-                box-shadow: 0 0 40px var(--secondary), 0 0 80px var(--secondary);
-            }
-        }
+@keyframes logoGlow {
+    from {
+        box-shadow: 0 0 20px var(--secondary);
+    }
+    to {
+        box-shadow: 0 0 40px var(--secondary), 0 0 80px var(--secondary);
+    }
+}
 
-        .title {
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: titleAnimation 3s infinite;
-        }
+.title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleAnimation 3s infinite;
+}
 
-        @keyframes titleAnimation {
-            0%, 100% {
-                filter: hue-rotate(0deg);
-            }
-            50% {
-                filter: hue-rotate(30deg);
-            }
-        }
+@keyframes titleAnimation {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(30deg);
+    }
+}
 
-        .subtitle {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            color: var(--secondary);
-            margin-bottom: 2rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
+.subtitle {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-        .countdown-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            flex-wrap: nowrap;
-        }
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-wrap: nowrap;
+}
 
-        .countdown-item {
-            padding: 1rem;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            transition: transform 0.3s ease;
-            flex: 1;
-            min-width: 80px;
-        }
+.countdown-item {
+    padding: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 80px;
+}
 
-        .countdown-item:hover {
-            transform: translateY(-5px);
-        }
+.countdown-item:hover {
+    transform: translateY(-5px);
+}
 
-        .countdown-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--accent);
-            text-shadow: 0 0 10px var(--shadow);
-        }
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--shadow);
+}
 
-        .countdown-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
+.countdown-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
 
-        @media (max-width: 480px) {
-            .countdown-container {
-                gap: 0.5rem;
-                padding: 1rem;
-                overflow-x: auto;
-                justify-content: space-evenly;
-            }
+@media (max-width: 480px) {
+.countdown-container {
+    gap: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    }
 
-            .countdown-item {
-                min-width: 70px;
-                padding: 0.5rem;
-            }
+.countdown-item {
+    min-width: 70px;
+    padding: 0.5rem;
+    }
 
-            .countdown-number {
-                font-size: 2rem;
-            }
-        }
+.countdown-number {
+    font-size: 2rem;
+    }
+}
 
-        .features-section {
-            padding: 5rem 2rem;
-            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                url('https://static.wixstatic.com/media/334454_0d75b0838a224636a2f01a63a38fc4f3~mv2.jpg') fixed center/cover;
-        }
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-        .feature-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.intro-section {
+    padding: 4rem 0;
+    margin: 6rem 0 3rem 0;
+    background: rgba(10, 10, 10, 0.95); /* Fondo oscuro semi-transparente */
+    backdrop-filter: blur(8px);
+}
 
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--card-shadow);
-        }
+.intro-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
 
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+.intro-section h2 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease;
+}
 
-        .purchase-section {
-            padding: 5rem 2rem;
-            text-align: center;
-            background: linear-gradient(to bottom, var(--bg-dark), #000);
-        }
+.intro-section p {
+    color: var(--text-light);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px var(--shadow);
+    opacity: 0;
+    transition: opacity 1s ease 0.5s;
+}
 
-        .price-card {
-            background: var(--dark-card-bg);
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 2rem;
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: var(--card-shadow);
-            text-align: center;
-            position: relative;
-        }
+/* Clases para la animación al scroll */
+.intro-section h2.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        .price-card img {
-            width: 100%;
-            border-radius: 15px;
-            margin-bottom: 1.5rem;
-        }
+.intro-section p.visible {
+    opacity: 1;
+}
 
-        .price-card h2 {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-        }
+.features-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url('https://static.wixstatic.com/media/334454_0d75b0838a224636a2f01a63a38fc4f3~mv2.jpg') fixed center/cover;
+}
 
-        .price-card .price {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin: 1rem 0;
-            text-shadow: 0 0 15px var(--shadow);
-        }
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .price-features {
-            margin: 2rem 0;
-            text-align: left;
-        }
+.feature-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .price-features li {
-            margin: 1rem 0;
-            padding-left: 2rem;
-            position: relative;
-            list-style: none;
-            color: var(--text-light);
-        }
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-shadow);
+}
 
-        .price-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-size: 1.2rem;
-        }
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-        .purchase-button {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--text-dark);
-            background: var(--secondary);
-            border: none;
-            border-radius: 30px;
-            text-transform: uppercase;
-            box-shadow: 0 0 20px var(--secondary);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+.purchase-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--bg-dark), #000);
+}
 
-        .purchase-button:hover {
-            background: var(--accent);
-            color: var(--text-light);
-            box-shadow: 0 0 20px var(--accent);
-        }
+.price-card {
+    background: var(--dark-card-bg);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    position: relative;
+}
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 3rem 0;
-        }
+.price-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
 
-        .social-icon {
-            width: 50px;
-            height: 50px;
-            background-size: cover;
-            border-radius: 50%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.price-card h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
 
-        .social-icon:hover {
-            transform: scale(1.2);
-            box-shadow: 0 0 20px var(--redes);
-        }
+.price-card .price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin: 1rem 0;
+    text-shadow: 0 0 15px var(--shadow);
+}
 
-        .facebook { background-image: url('https://static.wixstatic.com/media/334454_8f24d5e1ae2840028f8322851b256a5f~mv2.png'); }
-        .instagram { background-image: url('https://static.wixstatic.com/media/334454_d9610cde3ced47afb640a5b96ee295e3~mv2.png'); }
-        .twitter { background-image: url('https://static.wixstatic.com/media/334454_b2e72509478a43c694d328522de4070d~mv2.png'); }
-        .linkedin { background-image: url('https://static.wixstatic.com/media/334454_fdb549c3a95940089387f2936e872ac1~mv2.png'); }
+.price-features {
+    margin: 2rem 0;
+    text-align: left;
+}
 
-        .whatsapp-widget {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 70px;
-            height: 70px;
-            background: url('https://static.wixstatic.com/media/334454_69236334e64946f999cb874f1b3eec87~mv2.png') center/80% no-repeat #25D366;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
-            transition: transform 0.3s ease;
-            z-index: 1000;
-        }
+.price-features li {
+    margin: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+    list-style: none;
+    color: var(--text-light);
+}
 
-        .whatsapp-widget:hover {
-            transform: scale(1.1);
-            animation: none;
-        }
+.price-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
 
-        .epayco-button {
-            transform: scale(1.2) !important;
-            margin: 2rem auto !important;
-            box-shadow: 0 0 30px var(--accent) !important;
-            transition: all 0.3s ease !important;
-        }
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .epayco-button:hover {
-            transform: scale(1.3) !important;
-            box-shadow: 0 0 40px var(--accent) !important;
-        }
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px var(--redes);
+}
 
-        .footer {
-            padding: 2rem;
-            text-align: center;
-            background: var(--bg-dark);
-            margin-top: 0rem;
-        }
+.facebook { background-image: url('https://static.wixstatic.com/media/334454_8f24d5e1ae2840028f8322851b256a5f~mv2.png'); }
+.instagram { background-image: url('https://static.wixstatic.com/media/334454_d9610cde3ced47afb640a5b96ee295e3~mv2.png'); }
+.twitter { background-image: url('https://static.wixstatic.com/media/334454_b2e72509478a43c694d328522de4070d~mv2.png'); }
+.linkedin { background-image: url('https://static.wixstatic.com/media/334454_fdb549c3a95940089387f2936e872ac1~mv2.png'); }
 
-        .footer-links {
-            margin: 1rem 0;
-        }
+.whatsapp-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: url('https://static.wixstatic.com/media/334454_69236334e64946f999cb874f1b3eec87~mv2.png') center/80% no-repeat #25D366;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
 
-        .footer-links a {
-            color: var(--secondary);
-            text-decoration: none;
-            margin: 0 1rem;
-            transition: color 0.3s ease;
-        }
+.whatsapp-widget:hover {
+    transform: scale(1.1);
+    animation: none;
+}
 
-        .footer-links a:hover {
-            color: var(--accent);
-        }
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
 
-        .copyright {
-            color: var(--text-light);
-            opacity: 0.6;
-            margin-top: 1rem;
-        }
+.epayco-button {
+    transform: scale(1.2) !important;
+    margin: 2rem auto !important;
+    box-shadow: 0 0 30px var(--accent) !important;
+    transition: all 0.3s ease !important;
+}
 
-        @media (max-width: 768px) {
-            .countdown-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
+.epayco-button:hover {
+    transform: scale(1.3) !important;
+    box-shadow: 0 0 40px var(--accent) !important;
+}
 
-            .logo-container {
-                width: 180px;
-                height: 180px;
-            }
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: var(--bg-dark);
+    margin-top: 0rem;
+}
 
-            .whatsapp-widget {
-                width: 60px;
-                height: 60px;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .countdown-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.5rem;
-                padding: 1rem;
-            }
+.footer-links {
+    margin: 1rem 0;
+}
 
-            .feature-card {
-                padding: 1.5rem;
-            }
+.footer-links a {
+    color: var(--secondary);
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
 
-            .price-card {
-                padding: 2rem 1rem;
-            }
-        }
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    color: var(--text-light);
+    opacity: 0.6;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+.countdown-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+.logo-container {
+    width: 180px;
+    height: 180px;
+    }
+
+.whatsapp-widget {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+.countdown-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    }
+
+.feature-card {
+    padding: 1.5rem;
+    }
+
+.price-card {
+    padding: 2rem 1rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -436,6 +484,13 @@
             </div>
         </div>
     </section>
+    
+    <section class="intro-section">
+        <div class="container">
+            <h2>Domina la IA y Transforma tu Negocio</h2>
+            <p>Descubre cómo la inteligencia artificial puede transformar tu eficiencia y precisión como agente inmobiliario. Lidera la revolución digital en el sector, ofreciendo un servicio superior a tus clientes. ¡Potencia tus habilidades con tecnología y supera cualquier barrera!</p>
+        </div>
+    </section>
 
     <section class="features-section">
         <div class="features-grid">
@@ -447,12 +502,12 @@
             <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="https://static.wixstatic.com/media/334454_15041aa6d0b14befb7896c6ce1cc2a37~mv2.png" alt="" style="width: 50%;">
                 <h3>Más Ventas</h3>
-                <p>Incrementa tus ingresos con estrategias digitales probadas</p>
+                <p>Incrementa la venta de inmuebles con estrategias guiadas por la Inteligencia Artificial</p>
             </div>
             <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                 <img src="https://static.wixstatic.com/media/334454_706737518dd54388b5a4c929ff21ed1a~mv2.png" alt="" style="width: 50%;">
                 <h3>Marketing Preciso</h3>
-                <p>Llega a tu audiencia ideal con técnicas avanzadas de segmentación</p>
+                <p>Llega a una audiencia ideal con técnicas avanzadas de segmentación creadas con IA</p>
             </div>
         </div>
     </section>
@@ -463,11 +518,14 @@
             <h2>Oferta Exclusiva</h2>
             <div class="price">$39 USD</div>
             <ul class="price-features">
-                <li>Acceso inmediato al E-Book completo</li>
-                <li>Estrategias exclusivas de IA</li>
-                <li>Técnicas y estructura de prompts</li>
-                <li>Soporte personalizado</li>
-                <li>Actualizaciones continuas</li>
+
+            <div><h3>Qué esperas para convertirte en...</h3></div>
+
+                <li>Experto publicista de bienes raíces</li>
+                <li>Profesional evaluador de propiedades</li>
+                <li>Ágil Diseñador de imagenes impactantes</li>
+                <li>Especialista en redacción de contratos</li>
+                <li>El mejor agente inmobiliario jamás visto</li>
             </ul>
             <form>
                 <script src='https://checkout.epayco.co/checkout.js'
@@ -541,6 +599,25 @@
         };
 
         setInterval(countdown, 1000);
+
+        // Crear el observer
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Cuando la sección sea visible
+                        entry.target.querySelector('h2').classList.add('visible');
+                        entry.target.querySelector('p').classList.add('visible');
+                        // Dejar de observar una vez que se haya activado
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.3 // La animación se activará cuando el 30% de la sección sea visible
+            });
+
+            // Observar la sección
+            const introSection = document.querySelector('.intro-section');
+            observer.observe(introSection);
 
         // Animación flotante del widget de WhatsApp
         document.querySelector('.whatsapp-widget').style.animation = 'float 3s ease-in-out infinite';
